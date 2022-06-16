@@ -1,0 +1,12 @@
+quarkus:
+  quinoa:
+    dev-server-port: 9000
+    enable-dev-server-logs: true
+
+    # the config below fixes the root request issue, but disables redirection
+    # To the UI dev server altogether
+    # ignored-path-prefixes: "/"
+
+    # the config below is a potential solution when "ignore-path-prefixes"
+    # handles regexps
+    # ignored-path-prefixes: "^/$"

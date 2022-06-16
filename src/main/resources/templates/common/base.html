@@ -1,0 +1,18 @@
+{#if inject:globals.hxRequest}
+    {#insert}{/insert}
+{#else}
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <base href="/">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Request control - {#insert title}{/insert}</title>
+            <link rel="stylesheet" href="/main.css">
+        </head>
+        <body class="min-vh-100 d-flex flex-column">
+        <main class="container-fluid flex-grow-1" id="hxMainOutlet">{#insert}{/insert}</main>
+        <script src="/main.js"></script>
+        </body>
+    </html>
+{/if}
